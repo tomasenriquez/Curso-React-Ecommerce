@@ -1,7 +1,9 @@
 import "./CartWidget.css";
 import Cart_logo from "./assets/shopping_cart.svg";
 
+
 const CartWidget = () =>{
+
     return(
         <div className="CartWidget_container">
             <div className="CartWidget_shape">

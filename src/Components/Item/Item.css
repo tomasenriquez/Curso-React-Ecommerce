@@ -1,0 +1,39 @@
+.card-container-content{
+    display: flex;
+    align-content: space-between; 
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+}
+.item-container{
+    display: flex;
+    flex-direction: column; 
+    align-content: space-between; 
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.item-container img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.item-container button{
+    border-radius: 8px;
+    border: 0;
+    background-color: #1389fd;
+    color: white;
+    font-weight: 600;
+    padding: 10px 40px;
+    font-size: 16px;
+}
+.item-container button:hover{
+    background-color: #1179e0;
+    transition: background-color 1s ease ;
+}
+
+.button-comprar{
+    text-decoration: none;
+    color: white;
+}

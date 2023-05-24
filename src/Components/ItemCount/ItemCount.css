@@ -1,0 +1,58 @@
+.Itemcount div {
+    /* border: 1px solid black; */
+    margin: 10px 0px;
+
+}
+.Itemcount-add {
+    /* border: 1px solid black; */
+    margin: 10px 0px;
+    width: 100%;
+
+}
+
+
+
+.counterButton:hover{
+    background-color: #949494;
+    transition: background-color 1s ease;
+    outline: 0;
+    color: white;
+}
+
+.counterButton{
+    border: 0;
+    border-radius: 8px;
+    padding: 7px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #c3c3c3;
+    color: ivory;
+    
+}
+.count{
+    color: black;
+    padding: 5px 60px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin: 0px 18px;
+}
+
+.addCarrito {
+    border-radius: 8px;
+    border: 0;
+    background-color: #1389fd;
+    color: white;
+    padding: 15px 80px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.addCarrito:hover {
+    background-color: #1179e0;
+    transition: background-color 1s ease ;
+}
+
+
+
+
+

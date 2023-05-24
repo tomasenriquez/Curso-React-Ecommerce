@@ -1,22 +1,36 @@
-import CartWidget from "../CartWidget";
 import "./Navbar.css";
-import Logo from "./assets/Logo.svg"
+import CartWidget from "../CartWidget";
+import Logo from "./assets/Logo.svg";
+import { Link } from 'react-router-dom';
 
 
-const Navbar = () => {
+const Navbar = (count) => {
+    console.log(count)
     return(
         <div className="Navbar_container">
+
+            {/* Logo */}
             <div className="Navbar_logo_container">
-                <a className="Navbar_logo" href=""><img src={Logo} alt="" /></a>
+                
+                <Link to={'/'}> <img src={Logo} alt="" /> </Link>
             </div>
-            <div className="Navbar_secciones_container">
-                <ul>
-                    <li><a href="">Productos</a></li>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <li><a href="">Contacto</a></li>
+
+            {/* Secciones */}
+            <div className="Navbar_seccion_container">
+
+                <ul className="nav__link nav__link--menu">
+
+                    <li className="nav__items"> <Link to={'/'}> Catalogo </Link> </li>
+                    <li className="nav__items"> <Link to={'/category/macetas-piso'}> Macetas de Piso </Link> </li>
+                    <li className="nav__items"> <Link to={'/category/macetas-pared'}> Macetas de Pared </Link> </li>
+
                 </ul>
+
             </div>
+
+            {/* Carrito */}
             <CartWidget />
+
         </div>
     );
 };
